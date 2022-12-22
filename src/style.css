@@ -32,6 +32,9 @@
     left:20px;
     top:20px;
 }
+.accordion-item.active .accordion-trigger::before{
+    content:"-";
+}
 .accordion-content{
     padding:20px;
     border-left:3px solid #c13b39;
