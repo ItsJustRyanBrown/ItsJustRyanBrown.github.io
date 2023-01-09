@@ -1,4 +1,14 @@
+const accordion = document.querySelectorAll('.accordion-item');
+
 const accordionTrg = document.querySelectorAll('.accordion-trigger');
+
+window.addEventListener("load", function () {
+    let i;
+    for (i = 0; i < accordion.length; i++) {
+        accordion[i].classList.remove('active');
+        accordion[i].querySelector(".accordion-trigger").setAttribute('aria-expanded', "false");
+    };
+});
 
 let i;
 
